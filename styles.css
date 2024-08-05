@@ -1,3 +1,4 @@
+/* Estilo general del cuerpo */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,20 +6,46 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+
+/* Estilo del encabezado */
 header {
     background-color: #333;
     color: #fff;
     padding: 1em 0;
     text-align: center;
 }
+
+/* Contenedor principal para el contenido */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
+
+/* Sección personal */
+.personal {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo para la imagen de perfil */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: rotate(91deg);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo de las secciones */
 section {
     margin: 2em 0;
 }
+
+/* Estilo de los proyectos */
 .project {
     background: #fff;
     margin: 1em 0;
@@ -26,25 +53,83 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Efecto hover para los proyectos */
 .project:hover {
     background-color: #f0f0f0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Estilo del título del proyecto */
 .project h3 {
     margin-top: 0;
 }
+
+/* Estilo de la descripción oculta */
 .description {
     display: none;
     margin: 1em 0;
 }
+
+/* Estilo de la sección de contacto */
 .contact {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
 }
+
+/* Estilo de los enlaces en la sección de contacto */
 .contact a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Efecto hover para los enlaces en la sección de contacto */
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del menú de navegación */
+nav.menu {
+    background: #444;
+    color: #fff;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efecto hover para los enlaces del menú de navegación */
+nav.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    .container, .personal {
+        width: 90%;
+    }
+
+    nav.menu ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
 }

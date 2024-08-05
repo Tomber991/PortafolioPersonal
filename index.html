@@ -3,35 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Tomber</title>
+    <meta name="description" content="Portafolio personal de TOMBER991, programador Python y desarrollador web.">
+    <meta property="og:title" content="Portafolio Personal TOMBER991">
+    <meta property="og:description" content="Desarrollador Python y de sitios web, enfocado en el código limpio y funcional.">
+    <meta property="og:image" content="ruta/a/tu/imagen.jpg">
+
+    <meta name="p:domain_verify" content="be12db342d511e9aa1df6eb309193dd8"/>
+
+    <title>Portafolio Personal</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Portafolio de Tomber</h1>
+        <h1>Portafolio Personal</h1>
         <p>Puedo desarrollar y mantener código Python.</p>
     </header>
+
+    <nav class="menu" aria-label="Menú principal">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mí</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="personal">
+        <h2>¿Quién soy?</h2>
+        <img src="images/perfil.jpg" alt="Foto de perfil" class="profile-pic">
+        <h4>TOMBER991</h4>
+        <p>Programador Python y de sitios web, 
+        enfocado en el código limpio y funcional.</p>
+    </div>
+
     <div class="container">
         <section>
             <h2>Proyectos</h2>
             <div class="project" onclick="toggleDescription(this)">
-                <h3>LittelsFruits: Proyecto en Pygame.</h3>
-                <p class="description">Descripción: Los piratas se aventuran a la mar en busca del Little Piece. Un tesoro que te asegurá todo lo que puedes llegar a obtener.</p>
-                <a href="https://github.com/tuusuario/proyecto-1" target="_blank">Ver proyecto</a>
+                <h3>Dach: Mascota Virtual</h3>
+                <p class="description">Un emocionante juego donde debes criar perros salchichas adorables.</p>
+                <a href="https://github.com/Tomber991/Dach" target="_blank">Ver proyecto</a>
             </div>
             <div class="project" onclick="toggleDescription(this)">
-                <h3>Dach! Combates de perros salchichas</h3>
-                <p class="description">Descripción: Un juego simple creado con el framework Pygame. Debes criar perros salchichas para combatir y atraparlos a todos.</p>
-                <a href="https://github.com/tuusuario/proyecto-2" target="_blank">Ver proyecto</a>
+                <h3>Dach RPG</h3>
+                <p class="description">Un juego simple inspirado en videojuegos de batallas RPG donde debes criar perros salchichas para combatir y atraparlos a todos.</p>
+                <a href="https://github.com/Tomber991/Dach-RPG" target="_blank">Ver proyecto</a>
+            </div>
+            <div class="project" onclick="toggleDescription(this)">
+                <h3>1KB Dungeon</h3>
+                <p class="description">Un videojuego hecho en el motor TIC-80 donde puedes explorar una mazmora llena de enemigos, mejorar tu equipo y luchar.</p>
+                <a href="https://tomber991.itch.io/1kbdungeon" target="_blank">Ver Proyecto</a>
             </div>
             <!-- Añade más proyectos aquí -->
         </section>
     </div>
+
     <div class="contact">
         <h2>Contacto</h2>
-        <p>Correo: <a href="eltomascapo991@gmail.com">eltomascapo991@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/tomascapo991" target="_blank">Tomber991</a></p>
+
+
+
+        <form action="mailto:eltomascapo991@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nombre: </label> 
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Correo: <a href="mailto:eltomascapo991@gmail.com">eltomascapo991@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Tomber991" target="_blank">Tomber991</a></p>
     </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
