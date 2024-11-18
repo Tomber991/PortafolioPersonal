@@ -1,191 +1,105 @@
-/* General Styles */
+/* Base */
 body {
     font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
+    background-color: #1c1c1c;
+    color: #cdcdcd;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    text-align: center;
 }
 
-/* Header */
 header {
-    background: linear-gradient(135deg, #4caf50, #2e7d32);
-    color: white;
-    padding: 1rem 2rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #292929;
+    padding: 20px;
+    border-bottom: 2px solid #444;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #cdcdcd;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    color: #a0a0a0;
 }
 
-/* Navigation Menu */
-nav.menu {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 0.5rem 0;
-}
-
-nav.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.menu ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    background-color: #292929;
 }
 
-nav.menu a {
-    color: white;
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #cdcdcd;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
-nav.menu a:hover {
-    color: #4caf50;
+.menu ul li a:hover {
+    color: #ffffff;
 }
 
-/* Main Content */
-main {
-    padding: 2rem;
+/* Sections */
+.personal, .container, .contact {
+    padding: 30px;
 }
 
-section {
-    margin-bottom: 2rem;
-}
-
-section h2 {
-    font-size: 2rem;
-    color: #4caf50;
-    border-bottom: 2px solid #4caf50;
-    display: inline-block;
-    margin-bottom: 1rem;
+.personal h2, .container h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ffffff;
 }
 
 .profile-pic {
-    display: block;
-    margin: 1rem auto;
     border-radius: 50%;
-    max-width: 150px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    margin: 10px auto;
 }
 
-/* Project Cards */
-.container .project {
-    background: white;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+.project {
+    margin: 15px auto;
+    padding: 20px;
+    border: 1px solid #444;
+    background-color: #292929;
+    border-radius: 8px;
+    width: 80%;
+    transition: transform 0.2s;
 }
 
-.container .project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.project:hover {
+    transform: scale(1.05);
 }
 
-.container .project h3 {
-    margin: 0 0 0.5rem;
-    color: #2e7d32;
+.project h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
-.container .project p {
-    margin: 0 0 1rem;
-}
-
-.container .project a {
-    color: #4caf50;
+.project a {
+    color: #cdcdcd;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
 }
 
-.container .project a:hover {
-    color: #2e7d32;
+.project a:hover {
+    color: #ffffff;
 }
 
-/* Contact Form */
-.contact form {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.contact form label {
+/* Contact */
+form label {
     display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #333;
+    margin-top: 10px;
 }
 
-.contact form input,
-.contact form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact form button {
-    background: #4caf50;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contact form button:hover {
-    background: #2e7d32;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav.menu ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    .container .project {
-        padding: 1rem;
-    }
-}
+form input, form textarea, form button {
+    width: 80%;
+    margin: 10px auto;
+    padd

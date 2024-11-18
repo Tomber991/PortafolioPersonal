@@ -1,82 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of TOMBER991, Python programmer and web developer.">
-    <meta property="og:title" content="Personal Portfolio - TOMBER991">
-    <meta property="og:description" content="Python and web developer focused on clean and functional code.">
+    <meta name="description" content="Portafolio personal de TOMBER991, programador Python y desarrollador web.">
+    <meta property="og:title" content="Portafolio Personal TOMBER991">
+    <meta property="og:description" content="Desarrollador Python y de sitios web, enfocado en el código limpio y funcional.">
     <meta property="og:image" content="images/Foto_Perfil2.png">
 
-    <title>Personal Portfolio</title>
+    <title>Portafolio Personal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Personal Portfolio</h1>
-        <p>Python and web developer, focused on clean and functional code.</p>
+    <header class="header">
+        <h1>Portafolio Personal</h1>
+        <p>Programador Python y de sitios web, enfocado en el código limpio y funcional.</p>
     </header>
 
-    <nav class="menu" aria-label="Main Menu">
+    <nav class="menu" aria-label="Menú principal">
         <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mí</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
 
-    <main>
-        <section id="about-me" class="personal">
-            <h2>About Me</h2>
-            <img src="images/Foto_Perfil2.png" alt="Profile picture" class="profile-pic">
-            <h4>> Tomas Schmidt</h4>
-            <p>Artist and Programmer, 17 years old.</p>
-        </section>
+    <section class="personal">
+        <h2>¿Quién soy?</h2>
+        <img src="images/Foto_Perfil2.png" alt="Foto de perfil" class="profile-pic">
+        <h4>Tomas Schmidt</h4>
+        <p>Artista y Programador de 17 años.</p>
+    </section>
 
-        <section id="projects" class="container">
-            <h2>Projects</h2>
-            <div class="project" onclick="toggleDescription(this)">
-                <h3>Dach: Virtual Pet</h3>
-                <p class="description">An exciting game where you raise adorable dachshund puppies.</p>
-                <a href="https://github.com/Tomber991/Dach" target="_blank">View Project</a>
-            </div>
-            <div class="project" onclick="toggleDescription(this)">
-                <h3>Dach RPG</h3>
-                <p class="description">A simple RPG-inspired game where you raise dachshunds to battle and catch them all.</p>
-                <a href="https://github.com/Tomber991/Dach-RPG" target="_blank">View Project</a>
-            </div>
-            <div class="project" onclick="toggleDescription(this)">
-                <h3>1KB Dungeon</h3>
-                <p class="description">A game made with the TIC-80 engine, where you explore a dungeon full of enemies, upgrade your gear, and fight.</p>
-                <a href="https://tomber991.itch.io/1kbdungeon" target="_blank">View Project</a>
-            </div>
-            <!-- Add more projects here -->
+    <section class="container">
+        <h2>Proyectos</h2>
+        <div class="project" onclick="toggleDescription(this)">
+            <h3>Dach: Mascota Virtual</h3>
+            <p class="description">Un emocionante juego donde debes criar perros salchichas adorables.</p>
+            <a href="https://github.com/Tomber991/Dach" target="_blank">Ver proyecto</a>
+        </div>
+        <div class="project" onclick="toggleDescription(this)">
+            <h3>Dach RPG</h3>
+            <p class="description">Un juego simple inspirado en videojuegos de batallas RPG donde debes criar perros salchichas para combatir y atraparlos a todos.</p>
+            <a href="https://github.com/Tomber991/Dach-RPG" target="_blank">Ver proyecto</a>
+        </div>
+        <div class="project" onclick="toggleDescription(this)">
+            <h3>1KB Dungeon</h3>
+            <p class="description">Un videojuego hecho en el motor TIC-80 donde puedes explorar una mazmorra llena de enemigos, mejorar tu equipo y luchar.</p>
+            <a href="https://tomber991.itch.io/1kbdungeon" target="_blank">Ver Proyecto</a>
+        </div>
+        <iframe frameborder="0" src="https://itch.io/embed/1591481?border_width=5&amp;bg_color=1c1c1c&amp;fg_color=cdcdcd" width="560" height="175"><a href="https://tomber991.itch.io/1kbdungeon">1kb Dungeon by 991</a></iframe>
+    </section>
 
-            <iframe frameborder="0" src="https://itch.io/embed/1591481?border_width=5&amp;bg_color=1c1c1c&amp;fg_color=cdcdcd" width="560" height="175">
-                <a href="https://tomber991.itch.io/1kbdungeon">1kb Dungeon by 991</a>
-            </iframe>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <form action="mailto:eltomascapo991@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Name: </label> 
-                <input type="text" id="name" name="name" required> <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required> <br>
-                <label for="message">Message:</label> <br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-                <button type="submit">Send</button>
-            </form>
-            <p>Email: <a href="mailto:eltomascapo991@gmail.com">eltomascapo991@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/Tomber991" target="_blank">Tomber991</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 TOMBER991 - All Rights Reserved</p>
-    </footer>
+    <section class="contact">
+        <h2>Contacto</h2>
+        <form action="mailto:eltomascapo991@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nombre: </label> 
+            <input type="text" id="name" name="name" required> <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required> <br>
+            <label for="message">Mensaje:</label> <br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Correo: <a href="mailto:eltomascapo991@gmail.com">eltomascapo991@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Tomber991" target="_blank">Tomber991</a></p>
+    </section>
 
     <script src="scripts.js"></script>
 </body>
