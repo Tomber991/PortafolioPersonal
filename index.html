@@ -6,18 +6,24 @@
     <meta name="description" content="Portfolio of TOMBER991, a Python programmer and web developer with a passion for clean and functional code.">
     <meta property="og:title" content="TOMBER991's Personal Portfolio">
     <meta property="og:description" content="Explore projects and contact TOMBER991, a skilled Python programmer and web developer focused on creating elegant solutions.">
-    <meta property="og:image" content="images/Foto_Perfil2.png">
+    <meta property="og:image" content="images/Perfil2.jpg">
 
     <title>TOMBER991's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+    <!-- HEADER -->
     <header class="header">
+
+        <!-- img src="images/BANNER.png", alt="BANNER" class="banner" -->
+
         <h1>Welcome to My Portfolio</h1>
         <p>Your one-stop destination to explore my journey as a Python programmer and web developer.</p>
     </header>
 
+    <!-- NAV -->
     <nav class="menu" aria-label="Main menu">
         <ul>
             <li><a href="#">Home</a></li>
@@ -27,24 +33,29 @@
         </ul>
     </nav>
 
+    <!-- SECTION -->
     <section class="personal">
         <h2>Who Am I?</h2>
-        <img src="images/Foto_Perfil2.png" alt="Profile Picture" class="profile-pic">
+        <img src="images/Ftperfil.jpg" alt="Profile Picture" class="profile-pic">
         <h4>Tomas Schmidt</h4>
         <p>A 17-year-old artist and programmer dedicated to crafting engaging digital experiences. I combine creativity with technology to bring unique projects to life.</p>
     </section>
 
     <section class="container">
+
+        <!-- PROJECTS -->
+
         <h2>My Projects</h2>
+        <div class="project" onclick="toggleDescription(this)">
+            <h3>ArgBot: Bot Argentino</h3>
+            <p class="description">El primer Bot de discord bien argentino, para darle ese toque cultural a tus servidores.</p>
+            <a href="https://github.com/Tomber991/ArgBot" target="_blank">View Project</a>
+            
+        </div>
         <div class="project" onclick="toggleDescription(this)">
             <h3>Dach: Virtual Pet</h3>
             <p class="description">Dive into a heartwarming game where you raise adorable dachshunds, each with its own personality!</p>
             <a href="https://github.com/Tomber991/Dach" target="_blank">View Project</a>
-        </div>
-        <div class="project" onclick="toggleDescription(this)">
-            <h3>Dach RPG</h3>
-            <p class="description">A simple yet captivating RPG where dachshunds take center stage. Train, battle, and collect them all in a world of adventure!</p>
-            <a href="https://github.com/Tomber991/Dach-RPG" target="_blank">View Project</a>
         </div>
         <div class="project" onclick="toggleDescription(this)">
             <h3>1KB Dungeon</h3>
@@ -65,7 +76,7 @@
             <textarea id="message" name="message" rows="4" required></textarea><br>
             <button type="submit">Send</button>
         </form>
-        <p>Email: <a href="mailto:eltomascapo991@gmail.com">eltomascapo991@gmail.com</a></p>
+        <p>Email: <a href="mailto:tomber991@outlook.com">tomber991@outlook.com</a></p>
         <p>GitHub: <a href="https://github.com/Tomber991" target="_blank">Tomber991</a></p>
     </section>
 

@@ -8,6 +8,7 @@ body {
     text-align: center;
 }
 
+
 header {
     background-color: #292929;
     padding: 20px;
@@ -24,6 +25,14 @@ header p {
     font-size: 1.2em;
     color: #a0a0a0;
 }
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
 
 .menu ul {
     display: flex;
